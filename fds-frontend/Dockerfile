@@ -2,13 +2,14 @@ FROM node:latest
 
 WORKDIR /app
 
-COPY package.json .
-
-RUN npm install @siemens/ix @siemens/ix-react @siemens/ix-icons
-RUN npm install
-
 COPY . .
 
+RUN npm install
 
-CMD [ "npm", "run", "dev" ]
+RUN npm run build
+
+
+
+
+CMD [ "npm", "run", "preview" ]
 
