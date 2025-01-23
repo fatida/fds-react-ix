@@ -29,6 +29,7 @@ export default defineConfig({
   base,
   plugins: [react()],
   server: {
+    allowedHosts: true,
     watch: {
       usePolling: true,
     },
