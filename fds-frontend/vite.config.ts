@@ -28,6 +28,10 @@ checkForAdditionalTheme();
 export default defineConfig({
   base,
   plugins: [react()],
+  build: {
+    outDir: "dist",
+    assetsDir: "assets",
+  },
   server: {
     allowedHosts: true,
     watch: {
