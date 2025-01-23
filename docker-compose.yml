@@ -1,0 +1,17 @@
+version: "3"
+services:
+  fds-frontend:
+    image: fds-frontend
+    build: ./fds-frontend
+    container_name: fds-frontend
+    ports:
+      - 3000:3000
+    mem_limit: 1024mb
+
+  fds_nginx:
+    image: fds-nginx
+    build: ./fds-nginx
+    container_name: fds-nginx
+    ports:
+      - 80:80
+    mem_limit: 1024mb
