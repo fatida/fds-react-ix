@@ -30,7 +30,7 @@ export default defineConfig({
   plugins: [react()],
   build: {
     outDir: "dist",
-    assetsDir: "assets",
+    assetsDir: ".",
   },
   server: {
     allowedHosts: true,
